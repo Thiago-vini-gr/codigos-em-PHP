@@ -13,11 +13,11 @@
         $agora = date("H:i");
         $hora = date("H");
         if ($hora < 6 or $hora > 18) {
-            echo "<img src="img/noite.png" alt="noite">";
+            echo "<img src='img/lua.png' alt='Lua'>";
         }else{
-            echo "<img src="img/dia.png" alt="dia">";
+            echo "<img src='img/sol.png' alt='Sol'>";
         }
-        echo "hoje é dia". $hoje. " e agora são ". $agora. "horas. ";
+        echo " hoje é dia ". $hoje. " e agora são ". $agora. " horas. ";
     ?>
 </body>
 </html>

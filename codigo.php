@@ -9,7 +9,7 @@
     <h1>variaveis em php</h1>
     <?php
         $valor = "André";
-        echo %valor. "<br><br>";
+        echo $valor. "<br><br>";
 
         $valor = 9;
         $valor = $valor + 1;
