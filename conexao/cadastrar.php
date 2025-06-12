@@ -17,17 +17,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $stmt->bind_param("ssss", $nome_usuario, $senha_hash, $email_usuario, $contato_usuario);
 
         if ($stmt->execute()) {
-            echo "Cadastro realizado com sucesso!";
+            echo "<script>alert('Cadastro realizado com sucesso!'); window.location.href = 'formulario.php';</script>";
         } else {
-            echo "Erro ao cadastrar: " . $stmt->error;
+            echo "<script>alert('Erro ao cadastrar: " . $stmt->error . "'); window.location.href = 'formulario.php';</script>";
         }
 
         $stmt->close();
     } else {
-        echo "Erro na preparação da consulta: " . $mysqli->error;
+        echo "<script>alert('Erro na preparação da consulta: " . $mysqli->error . "'); window.location.href = 'formulario.php';</script>";
     }
 
 }
 
 $mysqli->close();
 ?>
+

@@ -9,10 +9,12 @@ include ('conexao.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Formulário de Cadastro</h2>
-    <form action="cadastrar.php" method="post">
+    <div class="form-box">
+            <h1>Formulário de Cadastro</h1>
+            <form action="cadastrar.php" method="post">
         <label for="nome_usuario">Nome:</label><br>
         <input type="text" id="nome_usuario" name="nome_usuario" required><br><br>
 
@@ -26,5 +28,6 @@ include ('conexao.php');
         <input type="password" id="senha_usuario" name="senha_usuario" required><br><br>
 
         <button type="submit">Cadastrar</button>
+    </div>
 </body>
 </html>

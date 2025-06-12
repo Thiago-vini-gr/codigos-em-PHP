@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #6a3093); /* Gradiente laranja e roxo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-box {
+    background-color: #000; /* Fundo preto */
+    padding: 20px; /* Reduzi o padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra mais escura */
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 15px; /* Reduzi o espaçamento */
+    color: #fff; /* Texto branco */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 3px; /* Reduzi o espaçamento */
+    font-weight: bold;
+    color: #fff; /* Texto branco */
+}
+
+input {
+    margin-bottom: 10px; /* Reduzi o espaçamento */
+    padding: 8px; /* Reduzi o padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background: linear-gradient(135deg, #ff7e5f, #6a3093); /* Gradiente laranja e roxo */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #e06b50, #5a267d); /* Gradiente mais escuro no hover */
+}

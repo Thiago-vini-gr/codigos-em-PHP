@@ -10,7 +10,7 @@ $mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
     echo "Falha na conexão:( " . $mysqli->connect_error . ")" . $mysqli->connect_errno;
 } 
     else {
-    echo "Conexão bem-sucedida!";
+    
 }
 
 ?>
